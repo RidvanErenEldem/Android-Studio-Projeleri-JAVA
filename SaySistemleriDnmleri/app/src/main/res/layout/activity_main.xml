@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/g1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/g2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/ikilik1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İkilik Sistem" />
+
+        <RadioButton
+            android:id="@+id/sekizlik1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sekizlik Sistem" />
+
+        <RadioButton
+            android:id="@+id/onluk1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Onluk Sistem" />
+
+        <RadioButton
+            android:id="@+id/onaltilik1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Onaltılık Sistem" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:id="@+id/g2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/ikilik2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="İkilik Sistem" />
+
+        <RadioButton
+            android:id="@+id/sekizlik2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sekizlik Sistem" />
+
+        <RadioButton
+            android:id="@+id/onluk2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Onluk Sistem" />
+
+        <RadioButton
+            android:id="@+id/onaltilik2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Onaltılık Sistem" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/donustur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dönüştür"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/g2"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toEndOf="@+id/g1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.060000002" />
+
+    <Button
+        android:id="@+id/bes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="5"
+        app:layout_constraintStart_toEndOf="@+id/dort"
+        app:layout_constraintTop_toBottomOf="@+id/iki" />
+
+    <Button
+        android:id="@+id/iki"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:enabled="false"
+        android:text="2"
+        app:layout_constraintStart_toEndOf="@+id/bir"
+        app:layout_constraintTop_toBottomOf="@+id/g1" />
+
+    <Button
+        android:id="@+id/sekiz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="8"
+        app:layout_constraintStart_toEndOf="@+id/yedi"
+        app:layout_constraintTop_toBottomOf="@+id/bes" />
+
+    <Button
+        android:id="@+id/uc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:enabled="false"
+        android:text="3"
+        app:layout_constraintStart_toEndOf="@+id/iki"
+        app:layout_constraintTop_toBottomOf="@+id/g1" />
+
+    <Button
+        android:id="@+id/bir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:enabled="false"
+        android:text="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g1" />
+
+    <Button
+        android:id="@+id/yedi"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dort" />
+
+    <Button
+        android:id="@+id/dokuz"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="9"
+        app:layout_constraintStart_toEndOf="@+id/sekiz"
+        app:layout_constraintTop_toBottomOf="@+id/alti" />
+
+    <Button
+        android:id="@+id/sifir"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        android:enabled="false"
+        android:text="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sekiz" />
+
+    <Button
+        android:id="@+id/dort"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bir" />
+
+    <Button
+        android:id="@+id/alti"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="6"
+        app:layout_constraintStart_toEndOf="@+id/bes"
+        app:layout_constraintTop_toBottomOf="@+id/uc" />
+
+    <Button
+        android:id="@+id/B"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:enabled="false"
+        android:text="B"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/A" />
+
+    <Button
+        android:id="@+id/D"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="D"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/C" />
+
+    <Button
+        android:id="@+id/E"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="E"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/D" />
+
+    <Button
+        android:id="@+id/A"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:enabled="false"
+        android:text="A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/g2" />
+
+    <Button
+        android:id="@+id/F"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="F"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/E" />
+
+    <Button
+        android:id="@+id/C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="C"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/B" />
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="512dp"
+        android:text="SONUÇ"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/sayigiris"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:enabled="false"
+        android:hint="Sayı Girişi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/donustur" />
+
+    <Button
+        android:id="@+id/temizle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Temizle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
